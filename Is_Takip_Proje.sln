@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is_Takip_Proje", "Is_Takip_Proje.csproj", "{3781BDAF-BE3F-4013-8916-1AC6E282BC98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3781BDAF-BE3F-4013-8916-1AC6E282BC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3781BDAF-BE3F-4013-8916-1AC6E282BC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3781BDAF-BE3F-4013-8916-1AC6E282BC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3781BDAF-BE3F-4013-8916-1AC6E282BC98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {991261DF-7DEF-4C1F-B2FF-E7B185090140}
+	EndGlobalSection
+EndGlobal
