@@ -16,5 +16,10 @@ namespace Is_Takip_Proje.Forms
         {
             InitializeComponent();
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
