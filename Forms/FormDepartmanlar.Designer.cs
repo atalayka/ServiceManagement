@@ -32,20 +32,20 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEkle = new DevExpress.XtraEditors.SimpleButton();
+            this.txtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.btnListele = new DevExpress.XtraEditors.SimpleButton();
+            this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -67,52 +67,52 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.simpleButton4);
-            this.groupControl1.Controls.Add(this.simpleButton3);
-            this.groupControl1.Controls.Add(this.simpleButton2);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.btnGuncelle);
+            this.groupControl1.Controls.Add(this.btnSil);
+            this.groupControl1.Controls.Add(this.btnEkle);
+            this.groupControl1.Controls.Add(this.txtAd);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.simpleButton1);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.btnListele);
+            this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(685, -1);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(302, 326);
             this.groupControl1.TabIndex = 1;
             // 
-            // simpleButton4
+            // btnGuncelle
             // 
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(102, 186);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(161, 30);
-            this.simpleButton4.TabIndex = 7;
-            this.simpleButton4.Text = "Güncelle";
+            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.btnGuncelle.Location = new System.Drawing.Point(102, 186);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(161, 30);
+            this.btnGuncelle.TabIndex = 7;
+            this.btnGuncelle.Text = "Güncelle";
             // 
-            // simpleButton3
+            // btnSil
             // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(102, 150);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(161, 30);
-            this.simpleButton3.TabIndex = 6;
-            this.simpleButton3.Text = "Sil";
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.btnSil.Location = new System.Drawing.Point(102, 150);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(161, 30);
+            this.btnSil.TabIndex = 6;
+            this.btnSil.Text = "Sil";
             // 
-            // simpleButton2
+            // btnEkle
             // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(102, 114);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(161, 30);
-            this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "Ekle";
+            this.btnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnEkle.Location = new System.Drawing.Point(102, 114);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(161, 30);
+            this.btnEkle.TabIndex = 5;
+            this.btnEkle.Text = "Ekle";
             // 
-            // textEdit2
+            // txtAd
             // 
-            this.textEdit2.Location = new System.Drawing.Point(78, 52);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(208, 20);
-            this.textEdit2.TabIndex = 4;
+            this.txtAd.Location = new System.Drawing.Point(78, 52);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(208, 20);
+            this.txtAd.TabIndex = 4;
             // 
             // labelControl2
             // 
@@ -122,21 +122,22 @@
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Departman Adı";
             // 
-            // simpleButton1
+            // btnListele
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(102, 78);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(161, 30);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "Listele";
+            this.btnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnListele.Location = new System.Drawing.Point(102, 78);
+            this.btnListele.Name = "btnListele";
+            this.btnListele.Size = new System.Drawing.Size(161, 30);
+            this.btnListele.TabIndex = 2;
+            this.btnListele.Text = "Listele";
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
-            // textEdit1
+            // txtID
             // 
-            this.textEdit1.Location = new System.Drawing.Point(78, 26);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(208, 20);
-            this.textEdit1.TabIndex = 1;
+            this.txtID.Location = new System.Drawing.Point(78, 26);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(208, 20);
+            this.txtID.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -160,8 +161,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -171,13 +172,13 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtAd;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.SimpleButton btnListele;
+        private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnGuncelle;
+        private DevExpress.XtraEditors.SimpleButton btnSil;
+        private DevExpress.XtraEditors.SimpleButton btnEkle;
     }
 }

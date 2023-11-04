@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Is_Takip_Proje.Entity;
 
 namespace Is_Takip_Proje.Forms
 {
@@ -16,10 +17,21 @@ namespace Is_Takip_Proje.Forms
         {
             InitializeComponent();
         }
-
+        //crud
+        void Listele()
+        {
+            DbIsTakiipEntities db = new DbIsTakiipEntities();
+            gridControl1.DataSource = db.TblDepartmanlar.ToList();
+        }
+        //crud
         private void gridControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            Listele();
         }
     }
 }
