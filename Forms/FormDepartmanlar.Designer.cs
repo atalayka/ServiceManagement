@@ -64,6 +64,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // groupControl1
             // 
@@ -82,30 +83,33 @@
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
             this.btnGuncelle.Location = new System.Drawing.Point(102, 186);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(161, 30);
             this.btnGuncelle.TabIndex = 7;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
-            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
             this.btnSil.Location = new System.Drawing.Point(102, 150);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(161, 30);
             this.btnSil.TabIndex = 6;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnEkle
             // 
-            this.btnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEkle.ImageOptions.Image")));
             this.btnEkle.Location = new System.Drawing.Point(102, 114);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(161, 30);
             this.btnEkle.TabIndex = 5;
             this.btnEkle.Text = "Ekle";
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtAd
             // 
@@ -124,7 +128,7 @@
             // 
             // btnListele
             // 
-            this.btnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnListele.ImageOptions.Image")));
             this.btnListele.Location = new System.Drawing.Point(102, 78);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(161, 30);
@@ -156,6 +160,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FormDepartmanlar";
             this.Text = "Departmanlar";
+            this.Load += new System.EventHandler(this.FormDepartmanlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
