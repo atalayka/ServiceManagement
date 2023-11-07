@@ -28,6 +28,7 @@ namespace Is_Takip_Proje.Entity
         public string Telefon { get; set; }
         public string Görsel { get; set; }
         public Nullable<int> Departman { get; set; }
+        public Nullable<bool> Durum { get; set; }
     
         public virtual TblDepartmanlar TblDepartmanlar { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
