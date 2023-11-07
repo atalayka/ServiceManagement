@@ -86,7 +86,7 @@ namespace Is_Takip_Proje.Forms
             deger.Ad = txtAd.Text;
 
             db.SaveChanges();
-            XtraMessageBox.Show("Departman Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            XtraMessageBox.Show("Departman Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             Listele();
 
         }

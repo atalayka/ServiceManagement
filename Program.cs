@@ -17,7 +17,7 @@ namespace Is_Takip_Proje
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDepartmanlar());
+            Application.Run(new FormPersoneller());
         }
     }
 }

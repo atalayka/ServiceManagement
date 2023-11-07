@@ -19,7 +19,9 @@ namespace Is_Takip_Proje
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Forms.FormPersoneller formpersoneller = new Forms.FormPersoneller();
+            formpersoneller.MdiParent = this;
+            formpersoneller.Show();
         }
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
