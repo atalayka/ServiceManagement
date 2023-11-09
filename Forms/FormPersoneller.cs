@@ -23,6 +23,8 @@ namespace Is_Takip_Proje.Forms
                 x.Soyad, 
                Departman =  x.TblDepartmanlar.Ad,
                 x.Telefon, 
+                x.Görsel,
+                x.Mail,
                 x.Durum 
             };
 
@@ -62,7 +64,9 @@ namespace Is_Takip_Proje.Forms
             tblPersonel.Ad = txtAd.Text;
             tblPersonel.Soyad = txtSoyad.Text;
             tblPersonel.Mail = txtMail.Text;
+            tblPersonel.Telefon = txtTelefon.Text;
             tblPersonel.Görsel = txtGorsel.Text;
+            tblPersonel.Durum = true;
             tblPersonel.Departman = int.Parse(lookUpEdit1.EditValue.ToString());
             XtraMessageBox.Show("Kayıt Gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             db.TblPersonel.Add(tblPersonel);
@@ -73,6 +77,48 @@ namespace Is_Takip_Proje.Forms
         private void btnListele_Click(object sender, EventArgs e)
         {
             ListelePersonel();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            var x = int.Parse(txtID.Text);
+            var deger = db.TblPersonel.Find(x);
+
+            deger.Durum = false;
+
+            db.SaveChanges();
+            XtraMessageBox.Show("Silme Gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListelePersonel();
+
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            txtAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            txtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
+            txtTelefon.Text = gridView1.GetFocusedRowCellValue("Telefon").ToString();
+            txtSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
+            txtGorsel.Text = gridView1.GetFocusedRowCellValue("Görsel").ToString();
+            lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("Departman").ToString();
+
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            var x = int.Parse(txtID.Text);
+            var deger = db.TblPersonel.Find(x);
+
+            deger.Ad = txtAd.Text;
+            deger.Soyad = txtSoyad.Text;
+            deger.Mail = txtMail.Text;
+            deger.Telefon = txtTelefon.Text;
+            deger.Görsel = txtGorsel.Text;
+            deger.Departman = int.Parse(lookUpEdit1.EditValue.ToString());
+            db.SaveChanges();
+            XtraMessageBox.Show("Güncelleme Gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListelePersonel();
+
         }
     }
 }
