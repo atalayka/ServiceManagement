@@ -51,9 +51,16 @@ namespace Is_Takip_Proje
 
         private void BtnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FormDepartmanlar frm = new Forms.FormDepartmanlar();
-            frm.MdiParent = this;
-            frm.Show();
+            Forms.FormDepartmanlar frmdepartmanlar = new Forms.FormDepartmanlar();
+            frmdepartmanlar.MdiParent = this;
+            frmdepartmanlar.Show();
+        }
+
+        private void btnPersonelIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.btnPersonelIstatistik frmistatistik = new Forms.btnPersonelIstatistik();
+            frmistatistik.MdiParent = this;
+            frmistatistik.Show();
         }
     }
 }
