@@ -58,7 +58,7 @@ namespace Is_Takip_Proje
 
         private void btnPersonelIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.btnPersonelIstatistik frmistatistik = new Forms.btnPersonelIstatistik();
+            Forms.FormPersonelIstatistik frmistatistik = new Forms.FormPersonelIstatistik();
             frmistatistik.MdiParent = this;
             frmistatistik.Show();
         }
