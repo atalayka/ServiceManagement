@@ -62,5 +62,12 @@ namespace Is_Takip_Proje
             frmistatistik.MdiParent = this;
             frmistatistik.Show();
         }
+
+        private void btnGorevListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FormGorevListesi frmGorev = new Forms.FormGorevListesi();
+            frmGorev.MdiParent = this;
+            frmGorev.Show();
+        }
     }
 }

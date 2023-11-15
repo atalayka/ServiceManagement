@@ -44,10 +44,10 @@
             this.btnPersonelListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.btnPersonelIstatistik = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFirmaListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnGorevListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
@@ -172,10 +172,10 @@
             this.btnPersonelListesi,
             this.barButtonItem7,
             this.btnPersonelIstatistik,
-            this.barButtonItem9,
+            this.btnFirmaListesi,
             this.barButtonItem10,
             this.barButtonItem11,
-            this.barButtonItem12,
+            this.btnGorevListesi,
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15,
@@ -223,19 +223,19 @@
             // 
             this.btnPersonelIstatistik.Caption = "Personel İstatistik";
             this.btnPersonelIstatistik.Id = 9;
-            this.btnPersonelIstatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.btnPersonelIstatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
+            this.btnPersonelIstatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonelIstatistik.ImageOptions.Image")));
+            this.btnPersonelIstatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPersonelIstatistik.ImageOptions.LargeImage")));
             this.btnPersonelIstatistik.Name = "btnPersonelIstatistik";
             this.btnPersonelIstatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPersonelIstatistik_ItemClick);
             // 
-            // barButtonItem9
+            // btnFirmaListesi
             // 
-            this.barButtonItem9.Caption = "Firma Listesi";
-            this.barButtonItem9.Id = 10;
-            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.barButtonItem9.Name = "barButtonItem9";
-            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
+            this.btnFirmaListesi.Caption = "Firma Listesi";
+            this.btnFirmaListesi.Id = 10;
+            this.btnFirmaListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFirmaListesi.ImageOptions.Image")));
+            this.btnFirmaListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnFirmaListesi.ImageOptions.LargeImage")));
+            this.btnFirmaListesi.Name = "btnFirmaListesi";
+            this.btnFirmaListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
             // barButtonItem10
             // 
@@ -254,13 +254,14 @@
             this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
             this.barButtonItem11.Name = "barButtonItem11";
             // 
-            // barButtonItem12
+            // btnGorevListesi
             // 
-            this.barButtonItem12.Caption = "Görev Listesi";
-            this.barButtonItem12.Id = 13;
-            this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.btnGorevListesi.Caption = "Görev Listesi";
+            this.btnGorevListesi.Id = 13;
+            this.btnGorevListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
+            this.btnGorevListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
+            this.btnGorevListesi.Name = "btnGorevListesi";
+            this.btnGorevListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGorevListesi_ItemClick);
             // 
             // barButtonItem13
             // 
@@ -400,7 +401,7 @@
             // 
             // ribbonPageGroup7
             // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnFirmaListesi);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "ribbonPageGroup7";
@@ -421,7 +422,7 @@
             // 
             // ribbonPageGroup9
             // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup9.ItemLinks.Add(this.btnGorevListesi);
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem13);
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem14);
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem15);
@@ -526,12 +527,12 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem btnPersonelIstatistik;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem btnFirmaListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem btnGorevListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
