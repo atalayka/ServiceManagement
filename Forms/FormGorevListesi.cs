@@ -31,6 +31,13 @@ namespace Is_Takip_Proje.Forms
         private void FormGorevListesi_Load(object sender, EventArgs e)
         {
             Listele();
+
+            lblAktifGorev.Text = db.TblGorevler.Count(x => x.Durum == true).ToString();
+            lblPasifGorev.Text = db.TblGorevler.Count(x => x.Durum == false).ToString();
+            lblToplamdepartman.Text = db.TblDepartmanlar.Count().ToString();
+
+            chartControl1.Series["Mevcut Durum"].Points.AddPoint("Aktif Görevler", int.Parse(lblAktifGorev.Text));
+            chartControl1.Series["Mevcut Durum"].Points.AddPoint("Pasif Görevler", int.Parse(lblPasifGorev.Text));
         }
     }
 }

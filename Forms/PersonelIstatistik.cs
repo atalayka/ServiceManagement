@@ -32,8 +32,8 @@ namespace Is_Takip_Proje.Forms
             lblDepartmanSayisi.Text = db.TblDepartmanlar.Count().ToString();
             lblPersonelSayisi.Text = db.TblPersonel.Count().ToString();
             lblFirmasayisi.Text = db.TblFirmalar.Count().ToString();
-            lblAktifİssayisi.Text = db.TblGorevler.Count(x => x.Durum == "1").ToString();
-            lblPasifissayisii.Text = db.TblGorevler.Count(x => x.Durum == "0").ToString();
+            lblAktifİssayisi.Text = db.TblGorevler.Count(x => x.Durum == true).ToString();
+            lblPasifissayisii.Text = db.TblGorevler.Count(x => x.Durum == false).ToString();
 
             lblSonGorevTarihh.Text = db.TblGorevler.OrderByDescending(x => x.ID).Select(x => x.Tarih).FirstOrDefault().ToString();
 
