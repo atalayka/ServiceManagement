@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -46,7 +47,11 @@ namespace Is_Takip_Proje.Forms
             t.GorevVeren = int.Parse(txtGorevVeren.Text);
             t.GorevAlan = int.Parse(lookGorevAlan.EditValue.ToString());
             t.Aciklama = txtAciklama.Text;
-            t.Durum = true;
+
+            if (checkAktifGorev.Checked == true) {
+                t.Durum = true;
+            }
+            else { t.Durum = false; };
             t.Tarih = DateTime.Parse(txtTarih.Text);
 
             db.TblGorevler.Add(t);
