@@ -25,9 +25,10 @@ namespace Is_Takip_Proje.Forms
             lookGorevAlan.Properties.ValueMember = "ID";
             lookGorevAlan.Properties.DisplayMember = "Ad";
             lookGorevAlan.Properties.DataSource = gorevAlan;
+            //yeni görev formu
         }
 
-    private void textEdit3_EditValueChanged(object sender, EventArgs e)
+        private void textEdit3_EditValueChanged(object sender, EventArgs e)
         {
 
         }
