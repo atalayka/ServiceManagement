@@ -133,6 +133,12 @@
     <Compile Include="Forms\FormPersoneller.Designer.cs">
       <DependentUpon>FormPersoneller.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormYeniGorev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormYeniGorev.Designer.cs">
+      <DependentUpon>FormYeniGorev.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PersonelIstatistik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPersoneller.resx">
       <DependentUpon>FormPersoneller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormYeniGorev.resx">
+      <DependentUpon>FormYeniGorev.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PersonelIstatistik.resx">
       <DependentUpon>PersonelIstatistik.cs</DependentUpon>
