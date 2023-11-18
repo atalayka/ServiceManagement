@@ -30,5 +30,11 @@ namespace Is_Takip_Proje.Forms
         {
             db.SaveChanges();
         }
+
+        private void görevDetaySilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingSource1.RemoveCurrent();
+            db.SaveChanges();
+        }
     }
 }
