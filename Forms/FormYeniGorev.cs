@@ -22,9 +22,9 @@ namespace Is_Takip_Proje.Forms
         DbIsTakiipEntities db = new DbIsTakiipEntities();
         private void FormYeniGorev_Load(object sender, EventArgs e)
         {
-            var gorevAlan = (from x in db.TblPersonel select new { x.ID, x.Ad}).ToList();
+            var gorevAlan = (from x in db.TblPersonel select new { x.ID, AdSoyad =  x.Ad + " " +  x.Soyad}).ToList();
             lookGorevAlan.Properties.ValueMember = "ID";
-            lookGorevAlan.Properties.DisplayMember = "Ad";
+            lookGorevAlan.Properties.DisplayMember = "AdSoyad";
             lookGorevAlan.Properties.DataSource = gorevAlan;
             //yeni görev formu
         }

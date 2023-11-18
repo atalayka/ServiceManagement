@@ -142,7 +142,7 @@
             // 
             this.lblSonGorevTarihh.Appearance.Font = new System.Drawing.Font("Tahoma", 16.25F);
             this.lblSonGorevTarihh.Appearance.Options.UseFont = true;
-            this.lblSonGorevTarihh.Location = new System.Drawing.Point(94, 51);
+            this.lblSonGorevTarihh.Location = new System.Drawing.Point(42, 53);
             this.lblSonGorevTarihh.Name = "lblSonGorevTarihh";
             this.lblSonGorevTarihh.Size = new System.Drawing.Size(12, 27);
             this.lblSonGorevTarihh.TabIndex = 1;

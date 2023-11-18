@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraPrinting.Preview;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,5 +76,12 @@ namespace Is_Takip_Proje
             Forms.FormYeniGorev ForemYeniGorev = new Forms.FormYeniGorev();
             ForemYeniGorev.Show();
         }
+
+        private void btnGorevDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FormGorevDetay formGorevDetay = new Forms.FormGorevDetay();
+            formGorevDetay.Show();
+        }
+
     }
 }
