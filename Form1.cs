@@ -18,11 +18,16 @@ namespace Is_Takip_Proje
             InitializeComponent();
         }
 
+        Forms.FormPersoneller formpersoneller;
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FormPersoneller formpersoneller = new Forms.FormPersoneller();
-            formpersoneller.MdiParent = this;
-            formpersoneller.Show();
+            if (formpersoneller == null || formpersoneller.IsDisposed)
+            {
+                formpersoneller = new Forms.FormPersoneller();
+                formpersoneller.MdiParent = this;
+                formpersoneller.Show();
+            }
+
         }
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -50,38 +55,60 @@ namespace Is_Takip_Proje
 
         }
 
+        Forms.FormDepartmanlar frmdepartmanlar;
         private void BtnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FormDepartmanlar frmdepartmanlar = new Forms.FormDepartmanlar();
-            frmdepartmanlar.MdiParent = this;
-            frmdepartmanlar.Show();
-        }
+            if (frmdepartmanlar == null || frmdepartmanlar.IsDisposed)
+            {
+                frmdepartmanlar = new Forms.FormDepartmanlar();
+                frmdepartmanlar.MdiParent = this;
+                frmdepartmanlar.Show();
+            }
 
+        }
+        Forms.FormPersonelIstatistik frmistatistik;
         private void btnPersonelIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FormPersonelIstatistik frmistatistik = new Forms.FormPersonelIstatistik();
-            frmistatistik.MdiParent = this;
-            frmistatistik.Show();
-        }
 
+            if (frmistatistik == null || frmistatistik.IsDisposed)
+            {
+                frmistatistik = new Forms.FormPersonelIstatistik();
+                frmistatistik.MdiParent = this;
+                frmistatistik.Show();
+            }
+        }
+        Forms.FormGorevListesi frmGorev;
         private void btnGorevListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FormGorevListesi frmGorev = new Forms.FormGorevListesi();
-            frmGorev.MdiParent = this;
-            frmGorev.Show();
+
+            if (frmGorev == null || frmGorev.IsDisposed)
+            {
+                frmGorev = new Forms.FormGorevListesi();
+                frmGorev.MdiParent = this;
+                frmGorev.Show();
+            }
         }
 
+        Forms.FormYeniGorev ForemYeniGorev;
         private void btnYeniGorev_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FormYeniGorev ForemYeniGorev = new Forms.FormYeniGorev();
-            ForemYeniGorev.Show();
+
+            if (ForemYeniGorev == null || ForemYeniGorev.IsDisposed)
+            {
+
+                ForemYeniGorev = new Forms.FormYeniGorev();
+                ForemYeniGorev.Show();
+            }
         }
 
+        Forms.FormGorevDetay formGorevDetay;
         private void btnGorevDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FormGorevDetay formGorevDetay = new Forms.FormGorevDetay();
-            formGorevDetay.Show();
+            if (formGorevDetay == null || formGorevDetay.IsDisposed)
+            {
+                formGorevDetay = new Forms.FormGorevDetay();
+                formGorevDetay.Show();
+            }
         }
-
     }
 }
