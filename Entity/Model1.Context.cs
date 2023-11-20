@@ -31,5 +31,7 @@ namespace Is_Takip_Proje.Entity
         public virtual DbSet<TblGorevDetaylar> TblGorevDetaylar { get; set; }
         public virtual DbSet<TblGorevler> TblGorevler { get; set; }
         public virtual DbSet<TblPersonel> TblPersonel { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<TblCagrilar> TblCagrilar { get; set; }
     }
 }

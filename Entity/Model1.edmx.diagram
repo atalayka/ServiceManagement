@@ -15,6 +15,8 @@
         <AssociationConnector Association="DbIsTakiipModel.FK_TblGorevDetaylar_TblGorevler" ManuallyRouted="false" />
         <AssociationConnector Association="DbIsTakiipModel.FK_TblGorevler_TblPersonel" ManuallyRouted="false" />
         <AssociationConnector Association="DbIsTakiipModel.FK_TblGorevler_TblPersonel1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbIsTakiipModel.TblCagrilar" Width="1.5" PointX="5" PointY="5.125" />
+        <AssociationConnector Association="DbIsTakiipModel.FK_TblCagrilar_TblFirmalar" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

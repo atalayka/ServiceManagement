@@ -14,6 +14,12 @@ namespace Is_Takip_Proje.Entity
     
     public partial class TblFirmalar
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public TblFirmalar()
+        {
+            this.TblCagrilar = new HashSet<TblCagrilar>();
+        }
+    
         public int ID { get; set; }
         public string Ad { get; set; }
         public string Yetkili { get; set; }
@@ -23,5 +29,8 @@ namespace Is_Takip_Proje.Entity
         public string il { get; set; }
         public string ilçe { get; set; }
         public string Adres { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TblCagrilar> TblCagrilar { get; set; }
     }
 }

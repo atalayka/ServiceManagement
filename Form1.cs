@@ -110,5 +110,15 @@ namespace Is_Takip_Proje
                 formGorevDetay.Show();
             }
         }
+        Forms.FormAnaForm frmanaform;
+        private void btnAnaform_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmanaform == null || frmanaform.IsDisposed)
+            {
+                frmanaform = new Forms.FormAnaForm();
+                frmanaform.MdiParent = this;
+                frmanaform.Show();
+            }
+        }
     }
 }
