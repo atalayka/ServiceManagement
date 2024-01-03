@@ -11,14 +11,15 @@ using System.Windows.Forms;
 
 namespace Is_Takip_Proje.PersonelGorevFormlari
 {
-    public partial class FormAktifGorevler : Form
+    public partial class FormPersonelPasifGorevler : Form
     {
-        public FormAktifGorevler()
+        public FormPersonelPasifGorevler()
         {
             InitializeComponent();
         }
         DbIsTakiipEntities db = new DbIsTakiipEntities();
-        private void FormAktifGorevler_Load(object sender, EventArgs e)
+
+        private void FormPersonelPasifGorevler_Load(object sender, EventArgs e)
         {
             var degerler = (from x in db.TblGorevler
                             select new
@@ -28,7 +29,7 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
                                 x.Tarih,
                                 x.GorevAlan,
                                 x.Durum
-                            }).Where(x => x.GorevAlan == 1 && x.Durum==true).ToList();
+                            }).Where(x => x.GorevAlan == 1 && x.Durum == false).ToList();
 
             gridControl1.DataSource = degerler;
 

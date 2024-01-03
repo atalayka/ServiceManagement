@@ -1,6 +1,6 @@
 ﻿namespace Is_Takip_Proje.PersonelGorevFormlari
 {
-    partial class FormAktifGorevler
+    partial class FormPersonelPasifGorevler
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(985, 320);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -51,16 +51,16 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // FormAktifGorevler
+            // FormPersonelPasifGorevler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 320);
             this.Controls.Add(this.gridControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormAktifGorevler";
-            this.Text = "Personel Aktif Görevler";
-            this.Load += new System.EventHandler(this.FormAktifGorevler_Load);
+            this.Name = "FormPersonelPasifGorevler";
+            this.Text = "Personel Pasif Görevler";
+            this.Load += new System.EventHandler(this.FormPersonelPasifGorevler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
