@@ -120,5 +120,15 @@ namespace Is_Takip_Proje
                 frmanaform.Show();
             }
         }
+        Forms.FormAktifCagrilar fr;
+        private void btnAktifCagrilar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Forms.FormAktifCagrilar();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
     }
 }
