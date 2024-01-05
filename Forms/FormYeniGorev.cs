@@ -43,8 +43,7 @@ namespace Is_Takip_Proje.Forms
         {
             TblGorevler t = new TblGorevler();
 
-
-            t.GorevVeren = int.Parse(txtGorevVeren.Text);
+            t.GorevVeren = 1;
             t.GorevAlan = int.Parse(lookGorevAlan.EditValue.ToString());
             t.Aciklama = txtAciklama.Text;
 
