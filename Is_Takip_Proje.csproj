@@ -181,6 +181,18 @@
     <Compile Include="PersonelGorevFormlari\FormAktifGorevler.Designer.cs">
       <DependentUpon>FormAktifGorevler.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonelGorevFormlari\FormCagriDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGorevFormlari\FormCagriDetay.Designer.cs">
+      <DependentUpon>FormCagriDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGorevFormlari\FormCagriListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGorevFormlari\FormCagriListesi.Designer.cs">
+      <DependentUpon>FormCagriListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonelGorevFormlari\FormPersonelFormu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +239,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelGorevFormlari\FormAktifGorevler.resx">
       <DependentUpon>FormAktifGorevler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGorevFormlari\FormCagriDetay.resx">
+      <DependentUpon>FormCagriDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGorevFormlari\FormCagriListesi.resx">
+      <DependentUpon>FormCagriListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelGorevFormlari\FormPersonelFormu.resx">
       <DependentUpon>FormPersonelFormu.cs</DependentUpon>

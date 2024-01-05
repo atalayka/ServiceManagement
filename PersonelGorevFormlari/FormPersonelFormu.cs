@@ -35,5 +35,12 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnCagriListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PersonelGorevFormlari.FormCagriListesi fr = new FormCagriListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
