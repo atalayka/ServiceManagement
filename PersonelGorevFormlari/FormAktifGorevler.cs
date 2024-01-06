@@ -28,7 +28,7 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
                                 x.Tarih,
                                 x.GorevAlan,
                                 x.Durum
-                            }).Where(x => x.Durum==true).ToList();
+                            }).Where(x => x.GorevAlan == 7 && x.Durum==true).ToList();
 
             gridControl1.DataSource = degerler;
 
