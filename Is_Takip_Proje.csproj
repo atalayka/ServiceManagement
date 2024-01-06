@@ -97,6 +97,9 @@
     <Compile Include="Entity\TblAdmin.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\TblCagriDetay.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\TblCagrilar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -110,6 +113,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblGorevler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TblMesajlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblPersonel.cs">
@@ -126,6 +132,12 @@
     </Compile>
     <Compile Include="Forms\FormAnaForm.Designer.cs">
       <DependentUpon>FormAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCagriAtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCagriAtama.Designer.cs">
+      <DependentUpon>FormCagriAtama.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormDepartmanlar.cs">
       <SubType>Form</SubType>
@@ -212,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormAnaForm.resx">
       <DependentUpon>FormAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCagriAtama.resx">
+      <DependentUpon>FormCagriAtama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDepartmanlar.resx">
       <DependentUpon>FormDepartmanlar.cs</DependentUpon>

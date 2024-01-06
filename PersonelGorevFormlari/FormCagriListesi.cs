@@ -33,5 +33,12 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
             gridView1.Columns["Durum"].Visible = false;
 
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FormCagriDetay fr = new FormCagriDetay();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("ID").ToString());
+            fr.Show();
+        }
     }
 }

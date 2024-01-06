@@ -29,12 +29,21 @@ namespace Is_Takip_Proje.Forms
                                 x.TblFirmalar.Telefon,
                                 x.Konu,
                                 x.Aciklama,
+                                Personel = x.TblPersonel.Ad,
                                 x.Durum
-                            })  .Where(x => x.Durum == true).ToList();
+                            }).Where(x => x.Durum == true).ToList();
 
 
 
             GridControl1FormCagrilar.DataSource = degerler;
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FormCagriAtama fr = new FormCagriAtama();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("ID").ToString());
+            fr.Show();
+
         }
     }
 }

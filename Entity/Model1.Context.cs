@@ -33,5 +33,7 @@ namespace Is_Takip_Proje.Entity
         public virtual DbSet<TblPersonel> TblPersonel { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TblCagrilar> TblCagrilar { get; set; }
+        public virtual DbSet<TblCagriDetay> TblCagriDetay { get; set; }
+        public virtual DbSet<TblMesajlar> TblMesajlar { get; set; }
     }
 }
