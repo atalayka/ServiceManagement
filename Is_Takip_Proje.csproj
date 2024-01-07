@@ -276,6 +276,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Entity\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -310,6 +311,13 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Yeni Proje %281%29.png" />
+    <None Include="Resources\Yeni Proje1.png" />
+    <None Include="Resources\Yeni Proje.png" />
+    <None Include="Resources\icons8-clock-160 %281%29.png" />
+    <None Include="Resources\icons8-job-100.png" />
+    <None Include="Resources\icons8-settings-250.png" />
+    <None Include="Resources\icons8-clock-160.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
