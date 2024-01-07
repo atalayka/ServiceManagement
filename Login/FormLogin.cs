@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Is_Takip_Proje.Entity;
 
 namespace Is_Takip_Proje.Login
 {
@@ -16,12 +17,35 @@ namespace Is_Takip_Proje.Login
         {
             InitializeComponent();
         }
-
+        DbIsTakiipEntities db = new DbIsTakiipEntities();
+        private int loginAttempts = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
-            //this.Hide();
+
+
+            var adminValue = db.TblAdmin.Where(x => x.Kullanici == txtkullanici.Text && x.Sifre == txtSifre.Text).FirstOrDefault();
+            if (adminValue != null)
+            {
+                Form1 form1 = new Form1();
+                form1.Show();
+                //this.Hide();
+            }
+            else
+            {
+                // Incorrect login
+                loginAttempts++;
+
+                if (loginAttempts >= 3)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    pictureBox5.Visible = true;
+                    pictureBox6.Visible = true;
+                }
+            }
+
 
         }
 

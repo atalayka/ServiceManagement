@@ -29,55 +29,59 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnPersonel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSifre = new DevExpress.XtraEditors.TextEdit();
+            this.txtkullanici = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.hyperLinkEdit1 = new DevExpress.XtraEditors.HyperLinkEdit();
             this.hyperLinkEdit2 = new DevExpress.XtraEditors.HyperLinkEdit();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtkullanici.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAdmin
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(388, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Admin Girişi";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAdmin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAdmin.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Location = new System.Drawing.Point(388, 257);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(225, 30);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.Text = "Admin Girişi";
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnPersonel
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(388, 293);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 30);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Personel Girişi";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnPersonel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPersonel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPersonel.ForeColor = System.Drawing.Color.White;
+            this.btnPersonel.Location = new System.Drawing.Point(388, 293);
+            this.btnPersonel.Name = "btnPersonel";
+            this.btnPersonel.Size = new System.Drawing.Size(225, 30);
+            this.btnPersonel.TabIndex = 1;
+            this.btnPersonel.Text = "Personel Girişi";
+            this.btnPersonel.UseVisualStyleBackColor = false;
+            this.btnPersonel.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -112,33 +116,33 @@
             this.label2.Text = "İş Takip ve Yönetim Sistemi";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textEdit2
+            // txtSifre
             // 
-            this.textEdit2.Location = new System.Drawing.Point(388, 221);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit2.Properties.PasswordChar = '*';
-            this.textEdit2.Properties.UseSystemPasswordChar = true;
-            this.textEdit2.Size = new System.Drawing.Size(225, 30);
-            this.textEdit2.TabIndex = 3;
-            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
+            this.txtSifre.Location = new System.Drawing.Point(388, 221);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Properties.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtSifre.Properties.Appearance.Options.UseFont = true;
+            this.txtSifre.Properties.Appearance.Options.UseForeColor = true;
+            this.txtSifre.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.txtSifre.Properties.PasswordChar = '*';
+            this.txtSifre.Properties.UseSystemPasswordChar = true;
+            this.txtSifre.Size = new System.Drawing.Size(225, 30);
+            this.txtSifre.TabIndex = 3;
+            this.txtSifre.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
             // 
-            // textEdit1
+            // txtkullanici
             // 
-            this.textEdit1.Location = new System.Drawing.Point(388, 185);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit1.Size = new System.Drawing.Size(225, 30);
-            this.textEdit1.TabIndex = 2;
-            this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            this.txtkullanici.Location = new System.Drawing.Point(388, 185);
+            this.txtkullanici.Name = "txtkullanici";
+            this.txtkullanici.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtkullanici.Properties.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtkullanici.Properties.Appearance.Options.UseFont = true;
+            this.txtkullanici.Properties.Appearance.Options.UseForeColor = true;
+            this.txtkullanici.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.txtkullanici.Size = new System.Drawing.Size(225, 30);
+            this.txtkullanici.TabIndex = 2;
+            this.txtkullanici.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
             // label1
             // 
@@ -201,12 +205,34 @@
             this.hyperLinkEdit2.Size = new System.Drawing.Size(36, 18);
             this.hyperLinkEdit2.TabIndex = 12;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(619, 221);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.Location = new System.Drawing.Point(619, 185);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(709, 450);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.hyperLinkEdit2);
             this.Controls.Add(this.hyperLinkEdit1);
             this.Controls.Add(this.pictureBox4);
@@ -214,10 +240,10 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtSifre);
+            this.Controls.Add(this.txtkullanici);
+            this.Controls.Add(this.btnPersonel);
+            this.Controls.Add(this.btnAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -226,13 +252,15 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtkullanici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperLinkEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,10 +268,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Button btnPersonel;
+        private DevExpress.XtraEditors.TextEdit txtkullanici;
+        private DevExpress.XtraEditors.TextEdit txtSifre;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -253,5 +281,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private DevExpress.XtraEditors.HyperLinkEdit hyperLinkEdit1;
         private DevExpress.XtraEditors.HyperLinkEdit hyperLinkEdit2;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
