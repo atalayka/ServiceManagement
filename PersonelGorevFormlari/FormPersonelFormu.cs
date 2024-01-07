@@ -16,6 +16,7 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
         {
             InitializeComponent();
         }
+        public string mail;
 
         private void FormPersonelFormu_Load(object sender, EventArgs e)
         {
@@ -26,6 +27,7 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
         {
             PersonelGorevFormlari.FormAktifGorevler fr = new FormAktifGorevler();
             fr.MdiParent = this;
+            fr.mail1 = mail;    
             fr.Show();
         }
 
@@ -33,6 +35,7 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
         {
             PersonelGorevFormlari.FormPersonelPasifGorevler fr = new FormPersonelPasifGorevler();
             fr.MdiParent = this;
+            fr.mail1 = mail;
             fr.Show();
         }
 
@@ -40,6 +43,7 @@ namespace Is_Takip_Proje.PersonelGorevFormlari
         {
             PersonelGorevFormlari.FormCagriListesi fr = new FormCagriListesi();
             fr.MdiParent = this;
+            fr.mail1 = mail;
             fr.Show();
         }
     }

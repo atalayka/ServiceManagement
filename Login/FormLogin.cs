@@ -27,8 +27,9 @@ namespace Is_Takip_Proje.Login
             if (adminValue != null)
             {
                 Form1 form1 = new Form1();
+                
                 form1.Show();
-                //this.Hide();
+                this.Hide();
             }
             else
             {
@@ -51,9 +52,32 @@ namespace Is_Takip_Proje.Login
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PersonelGorevFormlari.FormPersonelFormu fr = new PersonelGorevFormlari.FormPersonelFormu();
-            fr.Show();
-            //this.Hide();
+
+
+
+            var adminValue = db.TblPersonel.Where(x => x.Mail == txtkullanici.Text && x.Sifre == txtSifre.Text).FirstOrDefault();
+            if (adminValue != null)
+            {
+                PersonelGorevFormlari.FormPersonelFormu fr = new PersonelGorevFormlari.FormPersonelFormu();
+                fr.mail = txtkullanici.Text;    
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                // Incorrect login
+                loginAttempts++;
+
+                if (loginAttempts >= 3)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    pictureBox5.Visible = true;
+                    pictureBox6.Visible = true;
+                }
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)

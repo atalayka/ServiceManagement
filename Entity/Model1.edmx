@@ -114,6 +114,7 @@
           <Property Name="Departman" Type="int" />
           <Property Name="Durum" Type="bit" />
           <Property Name="Rol" Type="char" MaxLength="1" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="10" />
         </EntityType>
         <Association Name="FK_TblCagriDetay_TblCagrilar">
           <End Role="TblCagrilar" Type="Self.TblCagrilar" Multiplicity="0..1" />
@@ -352,6 +353,7 @@
           <Property Name="Durum" Type="Boolean" />
           <Property Name="Rol" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="TblCagrilar" Relationship="DbIsTakiipModel.FK_TblCagrilar_TblPersonel" FromRole="TblPersonel" ToRole="TblCagrilar" />
+          <Property Name="Sifre" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_TblPersonel_TblDepartmanlar">
           <End Role="TblDepartmanlar" Type="Self.TblDepartmanlar" Multiplicity="0..1" />
@@ -625,6 +627,7 @@
           <EntitySetMapping Name="TblPersonel">
             <EntityTypeMapping TypeName="DbIsTakiipModel.TblPersonel">
               <MappingFragment StoreEntitySet="TblPersonel">
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
                 <ScalarProperty Name="Rol" ColumnName="Rol" />
                 <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
