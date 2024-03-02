@@ -1,4 +1,4 @@
-# Is_Takip_Proje
+# İş ve hizmet takibi
 # Bu proje, küçük bir işletmenin müşteri operasyonlarına ait verileri tutmayı ve kontrol etmeyi amaçlar
 
 ![Ekran görüntüsü 2024-01-07 224112](https://github.com/fullmetaljacked/Is_Takip_Proje/assets/58311022/d0a6b96c-eda0-4e5d-88a0-5fd40a446aca)
